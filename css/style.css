@@ -1,0 +1,196 @@
+/*
+ * Template Name: 
+ * Author: MTD - http://themeforest.net/user/MTD
+ * Version: 1.0
+ */
+
+/* ----- ---- --- -- -
+
+01.	GENERAL
+	1. Reset
+	2. Common Elements
+	3. Main Layout
+	4. Typography
+	5. Forms
+	6. Browser Quirks
+	
+ - -- --- ---- ----- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* 01. GENERAL
+/* ------------------------------------------------------------------------------------ */
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 1. Reset
+/* - - - - - - - - - - - - - - - - - - - - */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, input, textarea, img, blockquote, iframe, code, pre{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 2. Common Elements
+/* - - - - - - - - - - - - - - - - - - - - */
+	
+body{
+	font: 12px sans-serif;
+	color: #555;
+}
+
+.clear{
+	clear: both;
+}
+
+hr{
+	padding: 0;
+	margin: 0 0 30px;
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: #d2d2d2;
+	clear: both;
+}
+
+/* - Micro Clearfix - */
+
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	zoom: 1;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 3. Main Layout
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.wrap{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#status{
+	width: 300px;
+	height: 300px;
+}
+
+.online{
+	background: green;
+}
+
+.offline{
+	background: red;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 4. Typography
+/* - - - - - - - - - - - - - - - - - - - - */
+
+a{
+	text-decoration: none;
+	color: #00c2f3;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+
+/* - Selection Color - */
+
+::-moz-selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+::selection{
+	color: #fff;
+	background: #00c2f3;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 5. Forms
+/* - - - - - - - - - - - - - - - - - - - - */
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+textarea{
+	
+}
+
+textarea{
+	
+}
+
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=color]:focus,
+input[type=email]:focus,
+textarea:focus{
+	
+}
+
+input[type=submit]{
+	
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - */
+/* 6. Browser Quirks
+/* - - - - - - - - - - - - - - - - - - - - */
+
+a:active, a:focus{
+	outline: none;
+}
+
+input:focus, input:active, textarea:focus{
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+	border: 0;
+}
+
+textarea{
+	-moz-resize: none;
+	resize: none;
+	overflow: auto;
+}
+
+textarea:focus{
+	-moz-resize: both;
+	resize: both;
+}
