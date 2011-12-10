@@ -14,17 +14,26 @@
 	<!-- jQuery Library-->
 	<script src="js/jQuery.min.js"></script>
 	
+	<script src="js/jQuery.connectionChecker.js"></script>
 	<script src="js/functions.js"></script>
 
-	<title></title>
+	<title>Connection Checker</title>
 </head>
 <body>
-	<div class="wrap">
-	
-		<div id="status" class="">
-			
+	<div id="status" class="">
+		
+		<div class="ring">
+			<h2>checking</h2>
 		</div>
-	
-	</div><!-- wrap close -->
+		
+		<audio preload="auto" autobuffer id="online_Sound"> 
+			<source src="audio/online.m4a" />
+			<source src="audio/online.ogg" />
+		</audio>
+		<audio preload="auto" autobuffer id="offline_Sound"> 
+			<source src="audio/offline.m4a" />
+			<source src="audio/offline.wav" />
+		</audio>
+	</div>
 </body>
 </html>

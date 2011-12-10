@@ -1,30 +1,6 @@
-/*
- * Template Name: 
- * Author: MTD - http://themeforest.net/user/MTD
- * Version: 1.0
- */
-
-/* ----- ---- --- -- -
-
-01.	GENERAL
-	1. Reset
-	2. Common Elements
-	3. Main Layout
-	4. Typography
-	5. Forms
-	6. Browser Quirks
-	
- - -- --- ---- ----- */
-
-
-
-/* ------------------------------------------------------------------------------------ */
-/* 01. GENERAL
-/* ------------------------------------------------------------------------------------ */
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 1. Reset
-/* - - - - - - - - - - - - - - - - - - - - */
+/* --------------------------------------- */
+/* Reset --------------------------------- */
+/* --------------------------------------- */
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, input, textarea, img, blockquote, iframe, code, pre{
 	margin: 0;
@@ -35,88 +11,46 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, input, textarea, 
 
 
 
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 2. Common Elements
-/* - - - - - - - - - - - - - - - - - - - - */
-	
+
 body{
 	font: 12px sans-serif;
 	color: #555;
-}
-
-.clear{
-	clear: both;
-}
-
-hr{
-	padding: 0;
-	margin: 0 0 30px;
-	border-width: 1px 0 0;
-	border-style: solid;
-	border-color: #d2d2d2;
-	clear: both;
-}
-
-/* - Micro Clearfix - */
-
-.cf:before, .cf:after {
-	content: "";
-	display: table;
-}
-
-.cf:after {
-	clear: both;
-}
-
-.cf {
-	zoom: 1;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 3. Main Layout
-/* - - - - - - - - - - - - - - - - - - - - */
-
-.wrap{
-	width: 940px;
-	padding: 0 10px;
-	margin: 0 auto;
+	background: url(../img/bg.jpg) repeat #eee;
 }
 
 #status{
-	width: 300px;
-	height: 300px;
+	width: 172px;
+	height: 172px;
+	padding: 15px;
+	margin: 20% auto 0;
+	border: 1px solid #bfbfbf;
+	border-radius: 101px;
+	box-shadow: 0 0 6px rgba(10,10,10,0.4) inset, 0 1px 0 rgba(255,255,255,0.9);
 }
 
-.online{
-	background: green;
+.ring{
+	width: 170px;
+	height: 170px;
+	background: url(../img/bg.jpg) repeat #f4f6f5;
+	border: 1px solid #bfbfbf;
+	border-radius: 95px;
+	box-shadow: 0 0 6px rgba(10,10,10,0.4), 0 -1px 0 rgba(255,255,255,0.8) inset;
 }
 
-.offline{
-	background: red;
+#status h2{
+	margin: 74px 0 0;
+	font: normal 28px/1em sans-serif;
+	color: #bbb;
+	text-shadow: 0 1px #fff;
+	text-align: center;
 }
 
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 4. Typography
-/* - - - - - - - - - - - - - - - - - - - - */
-
-a{
-	text-decoration: none;
-	color: #00c2f3;
+#status.online{
+	background: #0f0;
 }
 
-a:hover{
-	text-decoration: underline;
-}
-
-p{
-	margin-bottom: 10px;
-	line-height: 1.4em;
-}
-
-h1, h2, h3, h4, h5, h6{
-
+#status.offline{
+	background: #f00;
 }
 
 
@@ -124,73 +58,10 @@ h1, h2, h3, h4, h5, h6{
 
 ::-moz-selection{
 	color: #fff;
-	background: #00c2f3;
+	background: #222;
 }
 
 ::selection{
 	color: #fff;
-	background: #00c2f3;
-}
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 5. Forms
-/* - - - - - - - - - - - - - - - - - - - - */
-
-input[type=text],
-input[type=url],
-input[type=tel],
-input[type=number],
-input[type=color],
-input[type=email],
-textarea{
-	
-}
-
-textarea{
-	
-}
-
-input[type=text]:focus,
-input[type=url]:focus,
-input[type=tel]:focus,
-input[type=number]:focus,
-input[type=color]:focus,
-input[type=email]:focus,
-textarea:focus{
-	
-}
-
-input[type=submit]{
-	
-}
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - */
-/* 6. Browser Quirks
-/* - - - - - - - - - - - - - - - - - - - - */
-
-a:active, a:focus{
-	outline: none;
-}
-
-input:focus, input:active, textarea:focus{
-	outline: none;
-}
-
-input::-moz-focus-inner { 
-	border: 0;
-}
-
-textarea{
-	-moz-resize: none;
-	resize: none;
-	overflow: auto;
-}
-
-textarea:focus{
-	-moz-resize: both;
-	resize: both;
+	background: #222;
 }
