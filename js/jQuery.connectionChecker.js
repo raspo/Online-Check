@@ -1,3 +1,9 @@
+/*
+ * ConnectionChecker jQuery plugin
+ *
+ * Checks whether or not you are connected to the internet
+ * and eventually notifies you when the connection's status changes
+ */
 (function($){
 		
 	var methods = {
@@ -56,8 +62,6 @@
 		setStatus : function( status ){
 			
 			if( status ) {
-				
-				console.log(status);
 				
 				this.removeClass('online').removeClass('offline').addClass( status );
 				
